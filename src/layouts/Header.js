@@ -1,11 +1,14 @@
-import Image from 'next/image';
-import logoPokemon from '@img/static/pokemon_logo.png';
-import { Button } from '../style/components/ButtonCSS';
+import LogoHeader from '../components/LogoHeader';
+import Searcher from '../components/Searcher';
+import { FlexColumn } from '../style/components/FlexCSS';
 
 export default function Header() {
   return (
-    <header>
-      <Image src={logoPokemon} />
+    <header className="py-4">
+      <FlexColumn>
+        <LogoHeader></LogoHeader>
+        <Searcher></Searcher>
+      </FlexColumn>
     </header>
   );
 }

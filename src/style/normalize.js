@@ -7,9 +7,11 @@ const Normalize = createGlobalStyle`
     }
 
     body {
-        margin: 0;
+        max-width: 1200px;
+        margin: auto;
         padding: 0;
-        color: ${Colors.dark}
+        color: ${Colors.dark};
+        background-color: ${Colors.light};
     }
 `;
 
