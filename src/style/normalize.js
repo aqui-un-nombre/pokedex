@@ -13,6 +13,8 @@ const Normalize = createGlobalStyle`
         color: ${Colors.dark};
         background-color: ${Colors.light};
     }
+
+    :focus-visible { outline: none; }
 `;
 
 export default Normalize;
